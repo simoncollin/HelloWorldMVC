@@ -1,2 +1,9 @@
 rootProject.name = 'HelloWorldMVC'
 
+include 'controller'
+include 'model'
+include 'view'
+include 'model'
+include 'view'
+include 'controller'
+
