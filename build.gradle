@@ -3,7 +3,7 @@ plugins {
 }
 
 group 'com.exemple.mvc'
-version '1.0-SNAPSHOT'
+
 
 sourceCompatibility = 1.8
 
@@ -12,14 +12,13 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
     compile project(':controller')
 }
 
 allprojects{
     group = 'helloworldmvc'
-    //mainClassName='helloworldmvc.HelloWorldMVC'
-    version='0.0.1'
+
+    version='1.1-SNAPSHOT'
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {
@@ -37,11 +36,11 @@ artifacts{
     archives javadocJar
 }
 
-/*jar{
+jar{
     manifest {
         attributes('Implementation-Title': project.name,
                    'Implementation-Version': project.version,
-                   'Main-Class': project.mainClassName)
+                   'Main-Class': 'helloworldmvc.HelloWorldMVC')
     }
-}*/
+}
 
