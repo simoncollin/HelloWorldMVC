@@ -17,7 +17,6 @@ dependencies {
 
 allprojects{
     group = 'helloworldmvc'
-
     version='1.1-SNAPSHOT'
 }
 
